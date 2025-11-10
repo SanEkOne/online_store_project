@@ -29,7 +29,6 @@ header {
   Color:white;
 }
 
-
 .serch_bar {
   border: none;
   background-color: white;
@@ -56,7 +55,7 @@ header {
   outline: none;
 }
 
-.user_btn {
+.user_container {
   display: flex;
   align-items: center;
 }
@@ -64,126 +63,73 @@ header {
 .profile_btn {
   width: 50px;
   margin: 5px;
+  cursor: pointer;
 }
 
 .basket_btn {
   width: 35px;
   height: 35px;
   margin: 5px;
+  cursor: pointer;
 }
 
 
-.body-container {
+.main_container {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 20px;
 }
-.product-container {
-  background-color: white;
-  width: auto;
-  margin: 0 30px 0 0;
-  border-radius: 20px;
-  padding: 20px;
+
+.admin_container{
+  width: 80%;
   display: flex;
-  gap: 20px;
-}
-
-.product-img {
-  width: 280px;
-  height: 400px;
-  border-radius: 5px;
-}
-
-.photos-container {
-  width: 700px;
-  margin-top: 20px;
-}
-.photos-container img {
-  width: 230px;
-  height: 130px;
-  border-radius: 5px;
-}
-
-.main_and_photos-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.info {
-  margin-top: 20px;
-  width: 700px;
-}
-
-.main {
-  display: flex;
-  gap: 20px;
-}
-
-.main-info h1 {
-  font-size: 16px;
-}
-
-
-
-.buy-container {
-  background-color: rgb(255, 230, 247);
-  width: 400px;
-  height: 300px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-}
-
-.producName{
-  font-size: 20px;
-}
-
-.price {
-  font-size: 50px;
-  color: black;
-}
-
-.availability {
-  display: flex;
-  gap: 10px;
-  margin-top: 5px;
+  flex-direction: column;
+  margin-top: 20px;
+  border-radius: 10px;
   background-color: white;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 20px;
 }
 
-.availability h1 {
-  font-size: 15px;
-}
-
-.availability_mark {
-  display: flex;
-}
-
-.buy-img {
-  width: 20px;
-}
-
-.buy-btn {
-  width: 300px;
-  height: 60px;
-  margin-top: 50px;
-  border: none;
-  background-color: rgb(122, 236, 117);
-  border-radius: 30px;
+.inputs_container{
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-.buy-btn h1 {
-  color: white;
-}
-.buy-btn:hover {
-  background-color: rgb(16, 218, 1);
 }
 
-.availability {
+.inputText_conteiner{
   display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.product_input{
+  width: 300px;
+  max-width: 300px;
+  min-width: 300px;
+  max-height: 300px;
+}
+
+.submitBTN {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.inputPhoto_conteiner{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }

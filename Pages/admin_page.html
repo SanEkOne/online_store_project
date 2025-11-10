@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/admin_page.css">
+</head>
+<body>
+<header>
+  <div class="Store_name_container">
+    <a href="../index.html">
+      <h1 class="Store_name">Store</h1>
+    </a>
+  </div>
+
+  <div class="serch_bar">
+    <input type="text" placeholder="Поиск">
+    <img src="https://cdn-icons-png.flaticon.com/128/2866/2866321.png" alt="">
+  </div>
+
+  <div class="user_container">
+    <img class="profile_btn" src="../icons/profile_icon.png">
+    <img class="basket_btn" src="../icons/basket_icon.png">
+  </div>
+</header>
+
+<div class="main_container">
+  <div class="admin_container">
+    <div class="inputs_container">
+      <div class="inputText_conteiner">
+        <h1 class="title">Название:</h1>
+        <input class="product_input" type="text" placeholder="Product Name" id="product_name_input">
+        <h1 class="title">Категория:</h1>
+        <input class="product_input" type="text" placeholder="Product category" id="product_category_input">
+        <h1 class="title">Описание:</h1>
+        <textarea class="product_input" placeholder="Product Description" id="product_description_input"></textarea>
+        <h1 class="title">Цена:</h1>
+        <input class="product_input" type="number" placeholder="Product Price" id="product_price_input">
+      </div>
+      <div class="inputPhoto_conteiner">
+        <h1 class="title">Фото:</h1>
+      </div>
+    </div>
+    <button class="submitBTN" id="submitBTN">Добавить товар</button>
+  </div>
+</div>
+
+<script src="../js/admin_page.js"></script>
+</body>
+</html>

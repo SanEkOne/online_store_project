@@ -8,7 +8,7 @@
 <body>
 <header>
   <div class="Store_name_container">
-    <a href="../Pages/index.html">
+    <a href="../index.html">
       <h1 class="Store_name">Store</h1>
     </a>
   </div>
@@ -27,7 +27,7 @@
 <div class="body-container">
   <div class="product-container">
     <img class="product-img"
-         src="https://upload.wikimedia.org/wikipedia/commons/c/c9/-Insert_image_here-.svg"
+         src=""
          alt="">
     <div class="main_and_photos-container">
       <div class="main">
@@ -36,32 +36,29 @@
           <h1>Производитель</h1>
         </div>
         <div class="main-info">
-          <p>"тип"</p>
+          <p id="product_category">"тип"</p>
           <p>"Производитель"</p>
         </div>
       </div>
       <div class="photos-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/-Insert_image_here-.svg"
+        <img src=""
              alt="">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/-Insert_image_here-.svg"
+        <img src=""
              alt="">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/-Insert_image_here-.svg"
+        <img src=""
              alt="">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/-Insert_image_here-.svg"
+        <img src=""
              alt="">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/-Insert_image_here-.svg"
+        <img src=""
              alt="">
       </div>
       <div class="info">
-        <p>"info"</p>
-        <br>
-        <p>"info"</p>
-        <br>
-        <p>"info"</p>
+        <p id="product_description">"info"</p>
       </div>
     </div>
     <div class="buy-container">
-      <h1 class="price">"price" ₴</h1>
+      <h1 id="product_name" class="productName"></h1>
+      <h1 id="product_price" class="price">"price" ₴</h1>
       <div class="availability">
         <h1>Наличие:</h1>
         <div class="availability_mark">
@@ -72,12 +69,13 @@
       <form action="">
         <button class="buy-btn">
           <img class="buy-img"
-               src="https://cdn.icon-icons.com/icons2/3002/PNG/512/trolley_cart_icon_187754.png" alt="">
+               src="../icons/grocery-basket-icon-7.png" alt="">
           <h1>КУПИТЬ</h1>
         </button>
       </form>
     </div>
   </div>
 </div>
+<script src="../js/product_page.js"></script>
 </body>
 </html>
