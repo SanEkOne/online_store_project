@@ -40,7 +40,7 @@ header {
 
 .serch_bar img {
   width: 20px;
-  color: gray;
+  rotate: 315deg;
 }
 
 .serch_bar input {
@@ -61,14 +61,13 @@ header {
 }
 
 .profile_btn {
-  width: 50px;
+  width: 35px;
   margin: 5px;
   cursor: pointer;
 }
 
 .basket_btn {
-  width: 35px;
-  height: 35px;
+  width: 30px;
   margin: 5px;
   cursor: pointer;
 }
@@ -145,6 +144,7 @@ header {
   flex-wrap: wrap;
   background-color: white;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .product_icon{
   width: 200px;
@@ -159,6 +159,13 @@ header {
   padding: 5px;
   box-sizing: border-box;
 }
+.product_image{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 a .product_icon {
   color: black;
 }

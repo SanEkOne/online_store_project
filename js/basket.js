@@ -1,15 +1,15 @@
-class PrintProducts{
+class PrintBasketProducts{
   constructor(containerId) {
     this.container = document.getElementById(containerId);
   }
 
   loadItems() {
-    const products = JSON.parse(localStorage.getItem("products") || "[]");
+    const products = JSON.parse(localStorage.getItem("basket_products") || "[]");
     this.container.innerHTML = "";
 
     products.forEach(product => {
       let link = document.createElement("a");
-      link.href = `Pages/product_page.html?name=${encodeURIComponent(product.name)}`;
+      link.href = `../Pages/product_page.html?name=${encodeURIComponent(product.name)}`;
       link.className = "product_link";
 
       let mainPhoto = product.photo1;
@@ -29,8 +29,5 @@ class PrintProducts{
   }
 }
 
-const printProducts = new PrintProducts("products_container");
+const printProducts = new PrintBasketProducts("basket_container");
 printProducts.loadItems();
-
-
-

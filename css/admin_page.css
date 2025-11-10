@@ -40,7 +40,7 @@ header {
 
 .serch_bar img {
   width: 20px;
-  color: gray;
+  rotate: 315deg;
 }
 
 .serch_bar input {
@@ -61,18 +61,16 @@ header {
 }
 
 .profile_btn {
-  width: 50px;
+  width: 35px;
   margin: 5px;
   cursor: pointer;
 }
 
 .basket_btn {
-  width: 35px;
-  height: 35px;
+  width: 30px;
   margin: 5px;
   cursor: pointer;
 }
-
 
 .main_container {
   display: flex;
@@ -89,6 +87,7 @@ header {
   border-radius: 10px;
   background-color: white;
   padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .inputs_container{
@@ -132,4 +131,8 @@ header {
   display: flex;
   flex-direction: column;
   width: 30%;
+}
+
+.photo_input{
+  margin: 10px;
 }

@@ -29,16 +29,26 @@
     <div class="inputs_container">
       <div class="inputText_conteiner">
         <h1 class="title">Название:</h1>
-        <input class="product_input" type="text" placeholder="Product Name" id="product_name_input">
+        <input class="product_input" type="text" placeholder="Product name" id="product_name_input">
         <h1 class="title">Категория:</h1>
         <input class="product_input" type="text" placeholder="Product category" id="product_category_input">
         <h1 class="title">Описание:</h1>
-        <textarea class="product_input" placeholder="Product Description" id="product_description_input"></textarea>
+        <textarea class="product_input" placeholder="Product description" id="product_description_input"></textarea>
+        <h1 class="title">Наличие:</h1>
+        <input type="text" class="product_input" placeholder="Product availability" id="product_availability_input">
         <h1 class="title">Цена:</h1>
-        <input class="product_input" type="number" placeholder="Product Price" id="product_price_input">
+        <input class="product_input" type="number" placeholder="Product price" id="product_price_input">
       </div>
       <div class="inputPhoto_conteiner">
         <h1 class="title">Фото:</h1>
+        <input type="file" accept="image/*" name="product_photo" class="photo_input" id="product_photo1_input">
+        <img class="product_photo" id="product_photo1" style="max-width:200px; max-height:200px;">
+        <input type="file" accept="image/*" name="product_photo" class="photo_input" id="product_photo2_input">
+        <img class="product_photo" id="product_photo2" style="max-width:200px; max-height:200px;">
+        <input type="file" accept="image/*" name="product_photo" class="photo_input" id="product_photo3_input">
+        <img class="product_photo" id="product_photo3" style="max-width:200px; max-height:200px;">
+        <input type="file" accept="image/*" name="product_photo" class="photo_input" id="product_photo4_input">
+        <img class="product_photo" id="product_photo4" style="max-width:200px; max-height:200px;">
       </div>
     </div>
     <button class="submitBTN" id="submitBTN">Добавить товар</button>

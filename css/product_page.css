@@ -41,7 +41,7 @@ header {
 
 .serch_bar img {
   width: 20px;
-  color: gray;
+  rotate: 315deg;
 }
 
 .serch_bar input {
@@ -62,14 +62,15 @@ header {
 }
 
 .profile_btn {
-  width: 50px;
+  width: 35px;
   margin: 5px;
+  cursor: pointer;
 }
 
 .basket_btn {
-  width: 35px;
-  height: 35px;
+  width: 30px;
   margin: 5px;
+  cursor: pointer;
 }
 
 
@@ -87,6 +88,7 @@ header {
   padding: 20px;
   display: flex;
   gap: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-img {
