@@ -26,10 +26,132 @@
 
 <div class="main_container">
   <div id="basket_container" class="basket_container">
+    <div id="product" class="product"></div>
+    <br><br>
+    <div class="order_container">
+      <h1 class="productPrice" id="total_price"></h1>
+      <br><br>
+      <a href="#scroll">
+        <button class="orderBTN" id="create_order_btn">Перейти к оплате</button>
+      </a>
+    </div>
+    <div class="buy_form_container">
+      <h1>Оформление заказа</h1>
+      <br>
+      <form>
+        <div class="order_form_container">
+          <h1>Доставка</h1>
+          <div class="delivery_options">
+            <input type="radio" name="delivery" id="pickup">
+            <label for="pickup">Самовывоз из магазина</label>
+            <div id="pickup_delivery_container" class="delivery_select_options">
+              <label for="pickup_city_select">Укажите город</label>
+              <select id="pickup_city_select">
+                <option value="1">Отделение 1</option>
+                <option value="2">Отделение 2</option>
+                <option value="3">Отделение 3</option>
+              </select>
 
+              <label for="pickup_select">Выберите отделение</label>
+              <select id="pickup_select">
+                <option value="1">Отделение 1</option>
+                <option value="2">Отделение 2</option>
+                <option value="3">Отделение 3</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="delivery_options">
+            <input type="radio" name="delivery" id="novaposhta">
+            <label for="novaposhta">Новая почта</label>
+            <div id="novaposhta_delivery_container" class="delivery_select_options">
+              <label for="novaposhta_city_select">Укажите город</label>
+              <select id="novaposhta_city_select">
+                <option value="1">Отделение 1</option>
+                <option value="2">Отделение 2</option>
+                <option value="3">Отделение 3</option>
+              </select>
+
+              <label for="novaposhta_select">Выберите отделение</label>
+              <select id="novaposhta_select">
+                <option value="1">Отделение 1</option>
+                <option value="2">Отделение 2</option>
+                <option value="3">Отделение 3</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="delivery_options">
+            <input type="radio" name="delivery" id="ukrposhta">
+            <label for="ukrposhta">Укр почта</label>
+            <div id="ukrposhta_delivery_container" class="delivery_select_options">
+              <label for="ukrposhta_city_select">Укажите город</label>
+              <select id="ukrposhta_city_select">
+                <option value="1">Отделение 1</option>
+                <option value="2">Отделение 2</option>
+                <option value="3">Отделение 3</option>
+              </select>
+
+              <label for="ukrposhta_select">Выберите отделение</label>
+              <select id="ukrposhta_select">
+                <option value="1">Отделение 1</option>
+                <option value="2">Отделение 2</option>
+                <option value="3">Отделение 3</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="payment-options">
+          <h3>Оплата</h3>
+
+          <label id="scroll" class="radio-container">
+            <input type="radio" name="payment" checked>
+            <span class="checkmark"></span>
+            Оплата при получении товара
+          </label>
+
+          <label class="radio-container">
+            <input type="radio" name="payment">
+            <span class="checkmark"></span>
+            Оплатить сейчас
+          </label>
+
+          <label class="radio-container">
+            <input type="radio" name="payment">
+            Кредит и оплата частями
+          </label>
+        </div>
+
+        <h1>Получатель</h1>
+        <div class="recipient_container">
+          <div class="recipient_data">
+            <div class="recipient_name">
+              <div class="label_column">
+                <label for="name" class="label_text">Имя</label>
+                <input id="name" class="text_input" type="text" required>
+              </div>
+              <div class="label_column">
+                <label for="surname" class="label_text">Фамилия</label>
+                <input id="surname" class="text_input" type="text" required>
+              </div>
+            </div>
+            <div class="label_column">
+              <label for="tel" class="label_text">Номер телефона</label>
+              <input id="tel" class="text_input" type="tel" inputmode="numeric" pattern="[0-9\+]{7,15}"
+                     placeholder="+38 (___) ___-__-__" required autocomplete="tel">
+
+            </div>
+          </div>
+        </div>
+        <div class="order_container">
+          <button onclick="alert('success')" class="orderBTN">Подтвердить заказ</button>
+        </div>
+      </form>
+    </div>
   </div>
-</div>
 
-<script src="/js/basket.js"></script>
+  <script src="/js/basket.js"></script>
 </body>
 </html>
