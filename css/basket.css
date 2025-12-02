@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: Arial, sans-serif;;
   background-color: rgb(179, 179, 179);
@@ -64,6 +60,14 @@ header {
   align-items: center;
 }
 
+.user_container a{
+  &:hover {
+    background-color: rgb(69, 69, 69);
+    border-radius: 5px;
+  }
+}
+
+
 .profile_btn {
   width: 35px;
   margin: 5px;
@@ -72,7 +76,7 @@ header {
 
 .basket_btn {
   width: 30px;
-  margin: 5px;
+  margin: 8px;
   cursor: pointer;
 }
 

@@ -50,10 +50,19 @@
   <div class="background_sale_container">
     <div class="category_side_container">
       <nav class="category_navigation">
-        <a href="">Компьютеры и ноутбуки</a>
-        <a href="">Спорт</a>
-        <a href="">Сантехника</a>
-        <a href="">Товары для дома</a>
+        <a href="" id="computers_and_laptops_link">Компьютеры и ноутбуки</a>
+        <a href="" id="sport_link">Спорт</a>
+        <a href="" id="plumbing_link">Сантехника</a>
+        <a href="" id="products_for_home_link">Товары для дома</a>
+        <a href="" id="clothes_link">Одежда</a>
+        <a href="" id="beauty_and_health_link">Красота и здоровье</a>
+        <a href="" id="furniture_and_accessories_link">Мебель</a>
+        <a href="" id="toys_and_games_link">Игрушки и игры</a>
+        <a href="" id="automotive_link">Автотовары</a>
+        <a href="" id="garden_link">Сад и огород</a>
+        <a href="" id="tools_link">Инструменты</a>
+        <a href="" id="pet_supplies_link">Товары для животных</a>
+        <a href="" id="books_and_office_link">Канцтовары, офис, книги</a>
       </nav>
     </div>
     <div class="sale-bar"></div>
@@ -65,7 +74,8 @@
 <div class="main_product_container">
   <div id="filter_container" class="filter_container">
 
-    <label for="price_range">Цена</label>
+    <label for="price_range" style="font-weight: bold">Цена</label>
+    <br>
     <div class="price_container">
       <label>От
         <input class="price_input" type="text" id="min_price_input" value="1">
@@ -74,10 +84,12 @@
         <input class="price_input" type="text" id="max_price_input" value="1000">
       </label>
     </div>
+    <br>
 
     <input class="range_input" type="range" min="1" max="1000" value="1" id="price_range">
     <br>
-    <button id="submitBTN">Применить</button>
+    <br>
+    <button class="submitBTN" id="submitBTN">Применить</button>
 
   </div>
   <div class="products" id="products_container">
@@ -86,8 +98,21 @@
   </div>
 </div>
 <footer>
+  <div class="socials">
+    <a href="#"><img src="https://img.icons8.com/ios_filled/512/FFFFFF/telegram.png" alt="Telegram"></a>
+    <a href="#"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png" alt="Instagram"></a>
+    <a href="#"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-app-round-white-icon.png" alt="Facebook"></a>
+  </div>
 
+  <div class="footer-links">
+    <a href="#">О нас</a>
+    <a href="#">Вакансии</a>
+    <a href="#">Контакты</a>
+    <a href="#">Кредит</a>
+    <a href="#">Возврат</a>
+  </div>
 </footer>
+
 
 <script src="js/app.js"></script>
 
