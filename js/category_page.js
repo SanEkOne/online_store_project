@@ -12,11 +12,14 @@ const container = document.getElementById("products");
 if (filtered.length === 0) {
   container.innerHTML = "<p>Нет товаров в этой категории</p>";
 }
+
 filtered.forEach(p => {
   container.innerHTML += `
     <div class="product">
+    <img src="${p.photo1}"/>
       <h3>${p.name}</h3>
       <p>Цена: ${p.price}$</p>
     </div>
   `;
 });
+

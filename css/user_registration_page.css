@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;;
+  background-color: rgb(179, 179, 179);
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(43, 43, 43);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Store_name_container {
+  align-items: center;
+  color: white;
+  margin: 5px;
+}
+.Store_name{
+  Color:white;
+}
+
+
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.user_container {
+  /*width: 80%;*/
+  /*background-color: white;*/
+  background: #fff;
+  width: 350px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  animation: fadeIn 0.6s ease;
+  margin-top: 50px;
+  margin-bottom: 485px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: rgb(16, 218, 1);
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: rgb(16, 218, 1);
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: rgb(15, 179, 3);
+}
+
+.switch {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.switch a {
+  color: #2575fc;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgb(43, 43, 43);
+  font-family: Arial, sans-serif;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.socials a img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+  font-size: 16px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+

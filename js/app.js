@@ -146,11 +146,11 @@ class Filter {
     let max = Number(this.max_price.value);
 
     if (min < 1) min = 1;
-    if (max > 1000) max = 1000;
+    if (max > 1000000) max = 1000000;
 
     if (min > max) {
       min = 1;
-      max = 1000;
+      max = 1000000;
     }
 
     this.min_price.value = min;
@@ -167,3 +167,40 @@ const filter = new Filter();
 // localStorage.removeItem("products");
 // localStorage.removeItem("basket_products");
 
+function adminSide(){
+  let currentUserCookie = document.cookie
+    .split("; ")
+    .find(row => row.startsWith("currentUser="));
+
+  let currentUser = currentUserCookie
+    ? JSON.parse(currentUserCookie.split("=")[1])
+    : null;
+
+  let adminBtn = document.getElementById("adminBTN");
+
+  adminBtn.style.display = "none";
+
+  if (currentUser && currentUser.email === "admin@gmail.com") {
+    adminBtn.style.display = "block";
+  }
+}
+window.addEventListener("DOMContentLoaded", adminSide);
+
+
+function slider(){
+  const slider = document.querySelector('.slider');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+
+  const scrollAmount = slider.querySelector('img').offsetWidth + 10; // ширина картинки + gap
+
+  nextBtn.addEventListener('click', () => {
+    slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+}
+
+slider();

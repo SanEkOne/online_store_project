@@ -36,13 +36,13 @@
   </div>
 
   <div class="user_container">
-    <a href="">
-    <img class="profile_btn" src="icons/profile_icon.png">
+    <a href="Pages/user_registration_page.html">
+      <img class="profile_btn" src="icons/profile_icon.png">
     </a>
     <a href="Pages/basket.html">
       <img class="basket_btn" src="icons/basket_icon.png">
     </a>
-    <button class="adminBTN" onclick="window.location.href='Pages/admin_page.html'">Admin side</button>
+    <button id="adminBTN" class="adminBTN" onclick="window.location.href='Pages/admin_page.html'">Admin side</button>
   </div>
 </header>
 
@@ -65,43 +65,61 @@
         <a href="" id="books_and_office_link">Канцтовары, офис, книги</a>
       </nav>
     </div>
-    <div class="sale-bar"></div>
+    <div class="sale-bar_container">
+      <div class="sale-bar">
+        <button class="prev">&lt;</button>
+
+        <div class="slider">
+          <img src="icons/apple-iphone-17-pro-max-2-removebg-preview.png"/>
+          <img src="icons/fcf6bbc1-c7b0-4f40-a99b-2826775df6bc-removebg-preview.png"/>
+          <img src="icons/images-removebg-preview.png"/>
+          <img src="icons/22167_500x500_w-removebg-preview.png"/>
+        </div>
+
+        <button class="next">&gt;</button>
+      </div>
+    </div>
     <div class="add_container"></div>
   </div>
 
 </div>
 
-<div class="main_product_container">
-  <div id="filter_container" class="filter_container">
+<div class="main_container">
+  <div class="main_product_container">
+    <div id="filter_container" class="filter_container">
 
-    <label for="price_range" style="font-weight: bold">Цена</label>
-    <br>
-    <div class="price_container">
-      <label>От
-        <input class="price_input" type="text" id="min_price_input" value="1">
-      </label>
-      <label>До:
-        <input class="price_input" type="text" id="max_price_input" value="1000">
-      </label>
+      <label for="price_range" style="font-weight: bold">Цена</label>
+      <br>
+      <div class="price_container">
+        <label>От
+          <input class="price_input" type="text" id="min_price_input" value="1">
+        </label>
+        <label>До:
+          <input class="price_input" type="text" id="max_price_input" value="1000">
+        </label>
+      </div>
+      <br>
+
+      <input class="range_input" type="range" min="1" max="1000000" value="1" id="price_range">
+      <br>
+      <br>
+      <button class="submitBTN" id="submitBTN">Применить</button>
+
     </div>
-    <br>
-
-    <input class="range_input" type="range" min="1" max="1000" value="1" id="price_range">
-    <br>
-    <br>
-    <button class="submitBTN" id="submitBTN">Применить</button>
-
-  </div>
-  <div class="products" id="products_container">
-
-
+    <div class="products" id="products_container">
+    </div>
   </div>
 </div>
+<br>
 <footer>
   <div class="socials">
     <a href="#"><img src="https://img.icons8.com/ios_filled/512/FFFFFF/telegram.png" alt="Telegram"></a>
-    <a href="#"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png" alt="Instagram"></a>
-    <a href="#"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-app-round-white-icon.png" alt="Facebook"></a>
+    <a href="#"><img
+      src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png"
+      alt="Instagram"></a>
+    <a href="#"><img
+      src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-app-round-white-icon.png"
+      alt="Facebook"></a>
   </div>
 
   <div class="footer-links">

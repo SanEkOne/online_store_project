@@ -66,20 +66,41 @@ class AddToBasket {
     this.addToBasket(newProduct);
   }
 
-  addToBasket(product) {
+  async addToBasket(product) {
     const products = JSON.parse(localStorage.getItem("basket_products") || "[]");
 
-    const exists = products.some(p => p.name === product.name);
-
-    if (exists) {
-      alert("Этот товар уже есть в корзине!");
-      return;
+    try{
+      await new Promise((resolve, reject) => {
+        const exists = products.some(p => p.name === product.name);
+        if (!exists) {
+          resolve();
+        } else {
+          reject("Этот товар уже есть в корзине!");
+        }
+      });
+      products.push(product);
+      localStorage.setItem("basket_products", JSON.stringify(products));
+      alert("Товар добавлен в корзину!");
+    }catch (error) {
+      alert(error);
     }
 
-    products.push(product);
-    localStorage.setItem("basket_products", JSON.stringify(products));
 
-    alert("Товар добавлен в корзину!");
+
+
+
+    // const exists = products.some(p => p.name === product.name);
+    // return new Promise((resolve, reject) =>{
+    //   if (!exists) {
+    //     resolve()
+    //   }
+    //   else {
+    //     reject({})
+    //   }
+    // }).then((result) => {
+    //   alert(result);
+    // })
+
   }
 }
 
